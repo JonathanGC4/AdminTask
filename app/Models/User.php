@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
     ];
 
     /**
@@ -45,5 +46,13 @@ class User extends Authenticatable
     public function tasks()
 {
     return $this->hasMany(Task::class);
+}
+public function isAdmin(): bool
+{
+    return $this->role === 'admin';
+}
+public function comments()
+{
+    return $this->hasMany(Comment::class);
 }
 }
