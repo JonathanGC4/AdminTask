@@ -1,0 +1,6 @@
+{
+  "providers": ["php"],
+  "packages": {
+    "php": "8.3"
+  }
+}
