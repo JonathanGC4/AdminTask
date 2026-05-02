@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     git \
     unzip \
     curl \
+
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
@@ -12,6 +13,7 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     libzip-dev \
     zip \
+    libpq-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd zip
 
