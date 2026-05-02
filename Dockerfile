@@ -34,5 +34,4 @@ RUN chmod -R 775 storage bootstrap/cache
 # Puerto Railway
 EXPOSE 8000
 
-# Comando de arranque
-CMD php artisan serve --host=0.0.0.0 --port=${PORT}
+CMD php -S 0.0.0.0:8000 -t public
