@@ -3,8 +3,12 @@
   "packages": {
     "php": "8.3"
   },
-  "aptPackages": [
+  "buildAptPackages": [
     "bison",
-    "re2c"
+    "re2c",
+    "libxml2-dev",
+    "libsqlite3-dev",
+    "libcurl4-openssl-dev",
+    "pkg-config"
   ]
 }
