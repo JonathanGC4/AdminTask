@@ -20,9 +20,3 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/test', function () {
-    return response()->json([
-        'status' => 'ok',
-        'message' => 'FUNCIONA'
-    ]);
-});
